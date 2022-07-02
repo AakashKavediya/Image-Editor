@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    overflow-y: hidden;
+}
+
 aside header {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -77,5 +81,6 @@ aside ul li div {
     }
     body {
         overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
