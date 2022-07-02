@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="image" id="image">
+        </div>
+    </main>
+    <aside>
+        <header>Photo Shopping</header>
+
+        <ul>
+            <li>
+                <div>
+                    <label>Brightness</label>
+                    <input id="bright" class="bright" value="100" min="0" max="200" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Contrast</label>
+                    <input id="contrast" value="100" min="0" max="200" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Blur</label>
+                    <input id="blurr" value="1" min="0" max="4" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Gray Layer</label>
+                    <input id="gray" value="1" min="0" max="2" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Hue-Rotate</label>
+                    <input id="hue" value="100" min="0" max="400" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Invert</label>
+                    <input id="invert" value="100" min="0" max="200" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Opacity</label>
+                    <input id="opacity" value="100" min="0" max="100" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Gold Vibe</label>
+                    <input id="saturate" value="100" min="0" max="200" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <label>Sepia</label>
+                    <input id="sepia" value="100" min="0" max="200" type="range">
+                    <span class="percent">100</span>
+                </div>
+            </li>
+
+        </ul>
+
+    </aside>
+    <script src=" index.js "></script>
+</body>
+
+</html>

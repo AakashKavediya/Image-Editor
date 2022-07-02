@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+aside header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #535353;
+    font-weight: 700;
+    padding: 10px;
+}
+
+aside ul li {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+aside {
+    width: 24%;
+    background-color: #ededed;
+    min-height: 100vh;
+    float: left;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+aside ul li div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+/* ____MAIN________________________________________________________________________ */
+
+.image {
+    width: 75%;
+    padding: 5vh;
+    height: 100vh;
+    background-color: whitesmoke;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1540492601412-9a3ecc39fecd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHVsbHxlbnwwfHwwfHw%3D&w=1000&q=80) no-repeat center;
+    background-size: 50%;
+    /* filter: hue-rotate(300deg); */
+    transition: .9s;
+}
+
+
+/* ____RANGEROW____________________________________________________________________________ */
+
+
+/* __HOVER------------------------------------------------------------ */
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+
+/* ____MEDIA__________________________________________________________________________ */
+
+@media(max-width:500px) {
+    .image {
+        float: none;
+        width: 100%;
+        background-size: 60%;
+        background-position: center;
+        height: 85vh;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
